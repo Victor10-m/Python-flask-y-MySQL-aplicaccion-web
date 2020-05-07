@@ -1,0 +1,16 @@
+{% extends 'layuot.html' %}
+
+{% block body %}
+<div class="col-md-4 offset-md-4">
+    <div class="card card-boby">
+        <form action="/update/{{contact.0}}" method="POST">
+
+        <input class="form-control" type="text" name="fullname" placeholder="Nombre completo" value="{{ contact.1 }}">
+        <input class="form-control" type="text" name="phone" placeholder="Telefono" value="{{ contact.2 }}">
+        <input class="form-control" type="text" name="email" placeholder="Email" value="{{ contact.3 }}">
+        <button class="btn btn-success btn-block" type="submit">Guardar </button>
+
+        </form>
+    </div>
+</div>
+{% endblock  %}
